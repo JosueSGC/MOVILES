@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Castro Rojas Brandon Sandro">
+    <meta name="author" content="Galván Cornelio Josué Shandé">
+    <title>MÓVILES</title>
+    <link rel="icon" href="img/logoori.png">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Header con logo y menú -->
+    <header>
+        <div class="logo">
+            <img src="img/logoori.png" alt="Logo Personal">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="INICIO.html">INICIO</a></li>
+                <li><a href="DOCENTES.html">DOCENTES</a></li>
+                <li><a href="TEORIA.html">TEORÍA</a></li>
+                <li><a href="EJERCICIOS.html">EJERCICIOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen de fondo reducida y bloques de contenido -->
+     <br>
+     <main>
+        <!-- Sección de imagen de fondo -->
+        <section class="background-image">
+            <h1>MOVILES</h1>
+        </section>
+
+        <!-- Sección de bloques de contenido -->
+        <section class="content-blocks">
+            <div class="block">
+                <img src="img/movil.jpg" alt="Imagen Bloque 1">
+                <h3>¿QUÉ SON LOS MÓVILES?</h3>
+                <p>En física matemática, los móviles son objetos en movimiento cuya posición cambia con el tiempo. Se analizan considerando factores como velocidad, aceleración, tiempo y trayectorias. Este estudio se realiza bajo modelos ideales que simplifican el análisis, como tratar al móvil como una partícula sin dimensiones. Por ejemplo, un coche en una carretera o una pelota en el aire pueden ser analizados como móviles, aplicando ecuaciones del movimiento para predecir su comportamiento. </p>
+            </div>
+            <div class="block">
+                <img src="img/CORRER.jpeg" alt="Imagen Bloque 2">
+                <h3>SITUACIÓN SIGNIFICATIVA</h3>
+                <h>¿Qué tan rápido puedes correr?</h>
+                    <p>Alberto quiere demostrarle a su amigo César qué tan rápido puede correr.
+                    Para ello, le sugiere una carrera, le indica que se coloque unos 200 metros delante de él. Alberto quiere comprobar que puede alcanzar a su amigo antes de que transcurran 4 min de haber partido simultáneamente. Si Alberto corre a 40km/h y César lo hace a 20Km/h ambos en el mismo sentido.
+                    Responde:</p>
+                    <p> 1. ¿En cuánto tiempo Alberto alcanzará a César?</p>
+                    <p> 2. ¿Cuánto recorrió César antes de ser alcanzado por Alberto?</p>
+                    <p>3. ¿Pudo Alberto alcanzar a César antes de haber transcurrido 4 minutos? </p>
+            </div>
+        </section>
+
+
+         <!-- Horario-->
+        <section>
+            <h2 class="subtitulo">HORARIO</h2>
+            <br>
+            <div id="cajat"><table border="1">
+                <caption>Horario de Clases</caption>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>TEMA</th>
+                        <th>Hora</th>
+                        <th>Aula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>TEMA 01</td>
+                        <td>09:00 - 11:30</td>
+                        <td>Aula A</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>TEMA 02</td>
+                        <td>09:00 - 11:30</td>
+                        <td>Aula A</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>TEMA 03</td>
+                        <td>09:00 - 11:30</td>
+                        <td>Aula A</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>TEMA 04</td>
+                        <td>09:00 - 11:30</td>
+                        <td>Aula A</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>TEMA 05</td>
+                        <td>09:00 - 11:30</td>
+                        <td>Aula A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+        <main>
+<br>
+
+         <!-- Formulario de Registro -->
+    <section>
+        <h4 class="subtitulo">¡REGÍSTRATE YA!</h4>
+        <br>
+        <div id="cajaR">
+        <form action="/enviar_datos" method="post">
+            <!-- Nombre -->
+             <label for="Nombre">Nombre:</label>
+             <input type="text" id="nombre" name="nombre" required>
+             <br><br>
+    
+              <!-- Correo electrónico -->
+              <label for="correo">Correo electrónico:</label>
+              <input type="text" id="correo" name="correo" required>
+              <br><br>
+    
+               <!-- Contrase{a} -->
+             <label for="contraseña">Contraseña:</label>
+             <input type="password" id="contraseña" name="contraseña" required>
+             <br><br>
+    
+              <!-- Edad -->
+              <label for="edad">Edad:</label>
+              <input type="number" id="edad" name="edad" min="14" max="23">
+              <br><br>
+    
+              <!-- Género -->
+              <label for="género">Género:</label>
+              <select name="género" id="género">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+    
+              <!-- Comentarios -->
+              <label for="comentarios">Comentarios:</label>
+              <textarea name="comentarios" id="comentarios" rows="4" cols="30"></textarea>
+                <br><br>
+              </select>
+              <br><br>
+    
+              <!-- Botón Enviar -->
+               <button type="submit">Registrarse</button>
+    
+               <!-- Botón Reestablecer -->
+               <button type="reset">Restablecer</button>
+        </form>
+    </div>
+    </section>
+     </main>
+
+     <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>CASTRO R. - GALVÁN C. &copy; 2024</p>
+            <p>Contacto: MATH_CG@hotmail.com</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/groups/439275455623937" target="_blank">Facebook</a> |
+                <a href="https://x.com/i/flow/single_sign_on" target="_blank">Twitter</a> |
+                <a href="https://www.instagram.com/brandon.sandro09/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+        
+    </body>
+    </html>
